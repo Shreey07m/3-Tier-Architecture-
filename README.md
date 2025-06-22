@@ -12,7 +12,7 @@ The architecture is divided into three logical tiers:
 
 ---
 
-## 🛠️ Technologies & AWS Services Used**
+## 🛠️ Technologies & AWS Services Used
 
 - **Frontend**: Node.js (React), Nginx
 - **Backend**: Node.js + Express
@@ -23,7 +23,7 @@ The architecture is divided into three logical tiers:
 
 ---
 
-## 🔧 Setup Instructions**
+## 🔧 Setup Instructions
 
 ### 1. 📦 Clone the Repository
 
