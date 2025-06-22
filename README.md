@@ -11,7 +11,7 @@ The architecture is divided into three logical tiers:
 - **Database Tier (Data Layer)**: MySQL-based RDS instance in a private subnet.
 
 ---
-**
+
 ## 🛠️ Technologies & AWS Services Used**
 
 - **Frontend**: Node.js (React), Nginx
@@ -22,16 +22,17 @@ The architecture is divided into three logical tiers:
 - **Connection**: AWS Session Manager (for secure EC2 access)
 
 ---
-**
+
 ## 🔧 Setup Instructions**
 
 **### 1. 📦 Clone the Repository**
 
 ```bash
 git clone https://github.com/Shreey07m/3-Tier-Architecture-.git
-```bash
+
 
 ---
+
 ### **2. 🪟 Setup Infrastructure on AWS**
 
 - Create custom **VPC**, **public/private subnets**
