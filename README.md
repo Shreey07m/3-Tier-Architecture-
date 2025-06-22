@@ -29,11 +29,11 @@ The architecture is divided into three logical tiers:
 
 ```bash
 git clone https://github.com/Shreey07m/3-Tier-Architecture-.git
-
+```
 
 ---
 
-### **2. 🪟 Setup Infrastructure on AWS**
+### 2. 🪟 Setup Infrastructure on AWS
 
 - Create custom **VPC**, **public/private subnets**
 - Define **Security Groups** for:
@@ -45,7 +45,7 @@ git clone https://github.com/Shreey07m/3-Tier-Architecture-.git
 - Upload your application code and configuration files (like `nginx.conf` and `dbConfig.js`) to **S3**
 
 
-### **3. 🛑 Deploy Database Layer
+### 3. 🛑 Deploy Database Layer
 **
 - Launch **RDS MySQL** in private subnets
 - Create DB: `three-tierdb`
@@ -63,9 +63,10 @@ CREATE TABLE transactions (
   amount DECIMAL(10,2),
   description VARCHAR(100),
   PRIMARY KEY(id)
-); ```
+);
+```
 
-**### 4. 🔌 Deploy App Tier**
+### 4. 🔌 Deploy App Tier
 
 - Launch **EC2 instance** in a private subnet
 - Use **AWS Session Manager** to connect
@@ -76,7 +77,9 @@ Install **Node.js**, **PM2**, and **MySQL client**:
 sudo yum install mysql -y
 curl -o- https://raw.githubusercontent.com/avizway1/aws_3tier_architecture/main/install.sh | bash
 nvm install 16
-npm install -g pm2 ```
+npm install -g pm2
+
+```
 
 **### 📥 Copy Application Code from S3 and Run the Server
 **
