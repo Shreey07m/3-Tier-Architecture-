@@ -10,9 +10,9 @@ The architecture is divided into three logical tiers:
 - **App Tier (Application Layer)**: Node.js backend hosted on a private EC2 instance, managed with PM2.
 - **Database Tier (Data Layer)**: MySQL-based RDS instance in a private subnet.
 
----
-
-## 🛠️ Technologies & AWS Services Used
+```
+**
+## 🛠️ Technologies & AWS Services Used**
 
 - **Frontend**: Node.js (React), Nginx
 - **Backend**: Node.js + Express
@@ -22,13 +22,15 @@ The architecture is divided into three logical tiers:
 - **Connection**: AWS Session Manager (for secure EC2 access)
 
 ---
+**
+## 🔧 Setup Instructions**
 
-## 🔧 Setup Instructions
-
-### 1. 📦 Clone the Repository
+**### 1. 📦 Clone the Repository**
 
 ```bash
-git clone https://github.com/Shreey07m/3-Tier-Architecture-.git ```
+git clone https://github.com/Shreey07m/3-Tier-Architecture-.git
+```bash
+
 
 ### **2. 🪟 Setup Infrastructure on AWS**
 
