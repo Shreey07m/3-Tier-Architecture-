@@ -88,7 +88,7 @@ pm2 start index.js
 pm2 save
 ```
 
-**###🔍 Test the Health Endpoint**
+**🔍 Test the Health Endpoint**
 ```bash
 curl http://localhost:4000/health
 ```
@@ -115,7 +115,7 @@ npm run build
 sudo amazon-linux-extras install nginx1 -y
 ```
 
-**###⚙️ Configure and Start Nginx:**
+**⚙️ Configure and Start Nginx:**
 ```bash
 cd /etc/nginx
 sudo rm nginx.conf
