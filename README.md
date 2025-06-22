@@ -88,7 +88,7 @@ pm2 start index.js
 pm2 save
 ```
 
-###**🔍 Test the Health Endpoint**
+**###🔍 Test the Health Endpoint**
 ```bash
 curl http://localhost:4000/health
 ```
@@ -99,11 +99,11 @@ curl http://localhost:4000/health
 - Attach the **App EC2 instance** to the Target Group
 - Create an **Internal Load Balancer** and associate it with the Target Group
 
-**### 6. 🌐 Deploy Web Tier**
+### 6. 🌐 Deploy Web Tier
 
 - Launch an **EC2 instance** in a **public subnet**
 
-**#### 🛠️ Install Node.js, Nginx, and Pull Frontend Code from S3:**
+#### 🛠️ Install Node.js, Nginx, and Pull Frontend Code from S3:
 
 ```bash
 curl -o- https://raw.githubusercontent.com/avizway1/aws_3tier_architecture/main/install.sh | bash
