@@ -25,13 +25,11 @@ The architecture is divided into three logical tiers:
 
 ## 🔧 Setup Instructions**
 
-**### 1. 📦 Clone the Repository**
+### 1. 📦 Clone the Repository
 
 ```bash
 git clone https://github.com/Shreey07m/3-Tier-Architecture-.git
 ```
-
----
 
 ### 2. 🪟 Setup Infrastructure on AWS
 
@@ -78,23 +76,24 @@ sudo yum install mysql -y
 curl -o- https://raw.githubusercontent.com/avizway1/aws_3tier_architecture/main/install.sh | bash
 nvm install 16
 npm install -g pm2
-
 ```
 
-**### 📥 Copy Application Code from S3 and Run the Server
-**
+### 📥 Copy Application Code from S3 and Run the Server
+
 ```bash
 aws s3 cp s3://<bucket-name>/application-code/app-tier/ app-tier --recursive
 cd app-tier
 npm install
 pm2 start index.js
-pm2 save ```
+pm2 save
+```
 
-**###🔍 Test the Health Endpoint**
+###**🔍 Test the Health Endpoint**
 ```bash
-curl http://localhost:4000/health ```
+curl http://localhost:4000/health
+```
 
-**### 5. 🔁 Internal Load Balancer**
+### 5. 🔁 Internal Load Balancer
 
 - Create a **Target Group** on port `4000`
 - Attach the **App EC2 instance** to the Target Group
@@ -113,7 +112,8 @@ aws s3 cp s3://<bucket-name>/application-code/web-tier/ web-tier --recursive
 cd web-tier
 npm install
 npm run build
-sudo amazon-linux-extras install nginx1 -y ```
+sudo amazon-linux-extras install nginx1 -y
+```
 
 **###⚙️ Configure and Start Nginx:**
 ```bash
@@ -122,7 +122,8 @@ sudo rm nginx.conf
 sudo aws s3 cp s3://<bucket-name>/application-code/nginx.conf .
 sudo service nginx restart
 chmod -R 755 /home/ec2-user
-sudo chkconfig nginx on ```
+sudo chkconfig nginx on
+```
 
 **✅ Access the frontend via the Web Tier EC2 instance’s public IP in your browser.**
 
