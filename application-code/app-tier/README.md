@@ -45,8 +45,8 @@ curl http://localhost:4000/health
 
 ## 📦 Deployment Notes
 
-Should run on EC2 in a private subnet
+- Should run on EC2 in a private subnet
+- Access MySQL through VPC only
 
-Access MySQL through VPC only
 
-##
+
