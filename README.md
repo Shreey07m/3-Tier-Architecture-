@@ -49,7 +49,7 @@ git clone https://github.com/Shreey07m/3-Tier-Architecture-.git
 - Create DB: `three-tierdb`
 - Credentials:
   - Username: `admin`
-  - Password: `JeetGauri07`
+  - Password: `*********`
 
 - Setup the database and table:
 
